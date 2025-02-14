@@ -217,23 +217,29 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Representative Tasks and Results</h2>
         
-        <!-- Causal eQTL Variant Effect Prediction -->
-        <h3 class="title is-4">Causal eQTL Variant Effect Prediction</h3>
+        <!-- Causal eQTL Variant Effect Prediction -->        <h3 class="title is-4">Causal eQTL Variant Effect Prediction</h3>
+        <div class="image-container">
+          <img src="static/images/eqtl.jpeg" alt="eQTL Results" width="100%">
+        </div>
         <p class="content has-text-justified">
           Genetic variants can influence gene expression, a fundamental process that drives cellular function and disease mechanisms. <strong>Causal eQTL prediction</strong> helps researchers identify which DNA mutations are responsible for changes in gene activity, aiding in the study of complex diseases like cancer and neurological disorders.
           HybriDNA has a 74% probability of correctly ranking a true causal genetic variant higher than a non-causal variant.
-
         </p>
+
         <div class="publication-video">
           <iframe src="Causal_eQTL_Task.html" frameborder="0" allowfullscreen></iframe>
         </div>
         <br>
         <!-- Transcription Factor Binding Prediction -->
         <h3 class="title is-4">Transcription Factor Binding Prediction (Mouse)</h3>
+        <div class="image-container">
+          <img src="static/images/th.jpeg" alt="TF Binding Results" width="100%">
+        </div>
         <p class="content has-text-justified">
           Transcription factors (TFs) are proteins that bind to DNA to regulate gene expression. Predicting TF binding sites is crucial for understanding how genes are turned on and off in different cell types and conditions, impacting areas such as drug discovery and gene therapy.
           This experiments shows that our model has a strong capability in identifying where proteins bind to regulate gene expression in mouse DNA sequences.
         </p>
+
         <div class="publication-video">
           <iframe src="Transcription_Factor_Binding_Prediction.html" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -241,9 +247,13 @@
 
         <!-- Human Enhancer Generation -->
 
-        
+
         <!-- Chromatin Accessibility Prediction -->
         <h3 class="title is-4">Chromatin Accessibility Prediction</h3>
+        <div class="image-container">
+          <img src="static/images/chromatin.jpeg" alt="Chromatin Accessibility Results" width="100%">
+        </div>
+
         <p class="content has-text-justified">
           Chromatin accessibility determines which regions of DNA are available for gene regulation. Understanding these open regions helps researchers identify active genes and epigenetic modifications, making it a key task for studies in cancer and developmental biology.
           The result indicates that HybriDNA can predict whether a region of DNA is accessible (open for gene regulation) or inaccessible with 84% accuracy.
@@ -255,6 +265,10 @@
         </div>
 
         <h3 class="title is-4">Human Enhancer Generation</h3>
+        <div class="image-container">
+          <img src="static/images/enhancer.png" alt="Enhancer Results" width="100%">
+        </div>
+        <br>
         <p class="content has-text-justified">
           Enhancers are regulatory DNA sequences that boost gene expression. <strong>Generating synthetic enhancers</strong> can revolutionize gene therapy by enabling precise control over gene activity, helping to treat genetic diseases and improving cellular engineering techniques. The activity level is predicted by a separately trained sequence-to-activity regression model.         This design task shows that our model can generate synthetic DNA sequences that can boost gene expression for desired cell types and also have high activity level than the previous best model.
 
@@ -349,5 +363,7 @@
 
 <!-- End of Statcounter Code -->
 
+</body>
+</html>
 </body>
 </html>
