@@ -79,7 +79,7 @@
               <span class="author-block"><sup>3</sup>Department of Computer Science, Princeton University</span><br>
               <span class="author-block"><sup>4</sup>School of Computer Science, Carnegie Mellon University</span><br>
               <span class="author-block"><sup>5</sup>Gaoling School of Artificial Intelligence, Renmin University of China</span><br>
-              <span class="author-block"><sup>†</sup>Equal Contribution</span>
+              <span class="author-block"><sup>†</sup>Equal Contribution, <sup>*</sup>Corresponding Author</span>
             </div>
           </div>
         </div>
@@ -221,81 +221,48 @@
         <h3 class="title is-4">Causal eQTL Variant Effect Prediction</h3>
         <p class="content has-text-justified">
           Genetic variants can influence gene expression, a fundamental process that drives cellular function and disease mechanisms. <strong>Causal eQTL prediction</strong> helps researchers identify which DNA mutations are responsible for changes in gene activity, aiding in the study of complex diseases like cancer and neurological disorders.
+          HybriDNA has a 74% probability of correctly ranking a true causal genetic variant higher than a non-causal variant.
+
         </p>
-        <table class="table is-fullwidth is-bordered">
-          <thead>
-            <tr>
-              <th>HybriDNA-7B Score</th>
-              <th>Previous Best Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>0.74 AUROC</strong></td>
-              <td>HyenaDNA: 0.71 AUROC</td>
-            </tr>
-          </tbody>
-        </table>
-        
+        <div class="publication-video">
+          <iframe src="Causal_eQTL_Task.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
         <!-- Transcription Factor Binding Prediction -->
-        <h3 class="title is-4">Transcription Factor Binding Prediction</h3>
+        <h3 class="title is-4">Transcription Factor Binding Prediction (Mouse)</h3>
         <p class="content has-text-justified">
           Transcription factors (TFs) are proteins that bind to DNA to regulate gene expression. Predicting TF binding sites is crucial for understanding how genes are turned on and off in different cell types and conditions, impacting areas such as drug discovery and gene therapy.
+          This experiments shows that our model has a strong capability in identifying where proteins bind to regulate gene expression in mouse DNA sequences.
         </p>
-        <table class="table is-fullwidth is-bordered">
-          <thead>
-            <tr>
-              <th>HybriDNA-7B Score</th>
-              <th>Previous Best Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>72.01 MCC</strong></td>
-              <td>NT-2.5B-MS: 67.02 MCC</td>
-            </tr>
-          </tbody>
-        </table>
-        
+        <div class="publication-video">
+          <iframe src="Transcription_Factor_Binding_Prediction.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
+
         <!-- Human Enhancer Generation -->
-        <h3 class="title is-4">Human Enhancer Generation</h3>
-        <p class="content has-text-justified">
-          Enhancers are regulatory DNA sequences that boost gene expression. <strong>Generating synthetic enhancers</strong> can revolutionize gene therapy by enabling precise control over gene activity, helping to treat genetic diseases and improving cellular engineering techniques.
-        </p>
-        <table class="table is-fullwidth is-bordered">
-          <thead>
-            <tr>
-              <th>HybriDNA-7B Score</th>
-              <th>Previous Best Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>7.3 Top-1 Activity</strong></td>
-              <td>HyenaDNA: 5.5 Top-1 Activity</td>
-            </tr>
-          </tbody>
-        </table>
+
         
         <!-- Chromatin Accessibility Prediction -->
         <h3 class="title is-4">Chromatin Accessibility Prediction</h3>
         <p class="content has-text-justified">
           Chromatin accessibility determines which regions of DNA are available for gene regulation. Understanding these open regions helps researchers identify active genes and epigenetic modifications, making it a key task for studies in cancer and developmental biology.
+          The result indicates that HybriDNA can predict whether a region of DNA is accessible (open for gene regulation) or inaccessible with 84% accuracy.
+
         </p>
-        <table class="table is-fullwidth is-bordered">
-          <thead>
-            <tr>
-              <th>HybriDNA-7B Score</th>
-              <th>Previous Best Model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>0.84 AUROC</strong></td>
-              <td>Caduceus-Ph: 0.83 AUROC</td>
-            </tr>
-          </tbody>
-        </table>
+        <br>
+        <div class="publication-video">
+          <iframe src="chromatin_accessibility_benchmark.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h3 class="title is-4">Human Enhancer Generation</h3>
+        <p class="content has-text-justified">
+          Enhancers are regulatory DNA sequences that boost gene expression. <strong>Generating synthetic enhancers</strong> can revolutionize gene therapy by enabling precise control over gene activity, helping to treat genetic diseases and improving cellular engineering techniques. The activity level is predicted by a separately trained sequence-to-activity regression model.         This design task shows that our model can generate synthetic DNA sequences that can boost gene expression for desired cell types and also have high activity level than the previous best model.
+
+        </p>
+        <br>
+        <div class="publication-video">
+          <iframe src="Human_Enhancer_Generation.html" frameborder="0" allowfullscreen></iframe>
+        </div>
         
         <p class="content has-text-justified">
           These results demonstrate <strong>HybriDNA's ability to outperform previous state-of-the-art models</strong> in key genomic tasks, enabling advances in <strong>gene regulation, disease modeling, and synthetic biology.</strong>
