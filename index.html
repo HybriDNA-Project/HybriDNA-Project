@@ -186,7 +186,7 @@
         <p class="content has-text-justified">
           HybriDNA significantly improves efficiency over standard <strong>Transformer-based models</strong>, especially when handling <strong>long DNA sequences</strong>.
           By incorporating a <strong>hybrid Transformer-Mamba2 architecture</strong>, HybriDNA achieves <strong>subquadratic scaling</strong> while maintaining state-of-the-art performance. 
-          The <strong>Mamba2 blocks</strong> enable efficient processing of ultra-long sequences, reducing computational overhead compared to traditional self-attention layers.
+          The <strong>Mamba2 blocks</strong> enable efficient processing of ultra-long sequences, reducing computational overhead compared to standard self-attention layers.
         </p>
         <br>
         <div class="image-container">
@@ -228,7 +228,7 @@
         <h3 class="title is-4">Transcription Factor Binding Prediction (Mouse)</h3>
         <p class="content has-text-justified">
           Transcription factors (TFs) are proteins that bind to DNA to regulate gene expression. Predicting TF binding sites is crucial for understanding how genes are turned on and off in different cell types and conditions, impacting areas such as drug discovery and gene therapy.
-          This experiment demonstrates the strong ability of our model to identify protein binding sites involved in regulating gene expression within mouse DNA sequences.
+          This experiment demonstrates the strong ability of HybriDNA to identify protein binding sites involved in regulating gene expression within mouse DNA sequences.
         </p>
         <div class="image-container" style="max-width: 70%; margin: auto;">
           <img src="static/images/tf.png" alt="TF Binding Results" width="100%">
@@ -255,7 +255,7 @@
         <!-- Human Enhancer Generation -->
         <h3 class="title is-4">Human Enhancer Generation</h3>
         <p class="content has-text-justified">
-          Enhancers are regulatory DNA sequences that boost gene expression. <strong>Generating synthetic enhancers</strong> can revolutionize gene therapy by enabling precise control over gene activity, helping to treat genetic diseases and improving cellular engineering techniques. The activity level is predicted by a separately trained sequence-to-activity regression model. This design task shows that our model can generate synthetic DNA sequences that can boost gene expression for desired cell types and also have high activity level than the previous best model.
+          Enhancers are regulatory DNA sequences that boost gene expression. <strong>Generating synthetic enhancers</strong> can revolutionize gene therapy by enabling precise control over gene activity, helping to treat genetic diseases and improving cellular engineering techniques. The activity level is predicted by a separately trained sequence-to-activity regression model. This design task shows that HybriDNA can generate synthetic DNA sequences that can boost gene expression for desired cell types and also have high activity level than the previous best model.
         </p>
         <div class="image-container" style="max-width: 70%; margin: auto;">
           <img src="static/images/enhancer1.png" alt="Enhancer Results" width="100%">
